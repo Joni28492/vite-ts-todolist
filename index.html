@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body class="bg-zinc-900 text-white">
+
+
+  <div class="flex justify-center items-center h-screen gap-x-2">
+    <form id="taskForm" class="bg-zinc-700 p-10 rounded-md max-w-md mb-2">
+
+      <label for="title" class="block">Title</label>
+      <input class="bg-gray-800 px-1 py-1 w-full rounded-md" type="text" name="title" placeholder="Write a title">
+
+      <label for="description" class="block">Description</label>
+      <textarea class="bg-gray-800 w-full rounded-md mb-2" name="description" rows="3"
+        placeholder="Write a description">
+      </textarea>
+
+      <button class="bg-blue-600 px-3 py-1 rounded-md hover:bg-blue-500">Save</button>
+    </form>
+
+    <div id="tasksList" class=" max-w-md w-full h-3/5 p-10 overflow-y-scroll">
+
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
